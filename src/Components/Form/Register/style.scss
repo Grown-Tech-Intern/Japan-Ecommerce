@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container-Register {
+    .Register {
+        background-image: url("/assets/images/login-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 660px;
+        padding: 60px;
+        .Form-Register {
+            width: 471px;
+            height: 505px;
+            margin-left: 60%;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+           
+            .title {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;     
+                margin-bottom: 2rem;          
+            }
+
+            .Input-email, .Input-pass  {
+                margin-bottom: 1.5rem;
+                input {
+                    width: 100%;
+                    padding: 12px;
+                    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+
+                }              
+            }
+
+            .Input-pass {    
+                position: relative; 
+                button {
+                    background: transparent;
+                    border: 0;
+                    outline: none;
+                    padding: 0 0.9375rem 0 0.75rem;
+                    position: absolute;
+                    top: 18px;
+                    right: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                    img {
+                        width: 1.25rem;
+                        height: 0.625rem;
+                    }
+                }
+            }
+
+            .Button-login {                
+                .btn-sign_in {
+                    width: 406px;
+                    height: 45px;
+                    background: #D80000;
+                    opacity: 0.5;
+                    color: #fff;
+                    margin-top: 16px;
+                    cursor: pointer;
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    //line-height: 20px;
+                    letter-spacing: 0.03em;
+                    color: #BC0000;
+                }
+                .Or {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 20px 0.1px;
+                    font-size: 21.6667px;
+                    opacity: 0.3;
+                    .line {
+                        height: 2px;
+                        background-color: #000;
+                        width: 126.2px;
+                        height: 0px;
+                        left: 312.8px;
+                        top: 393.19px;
+                        border: 0.417895px solid #001345;
+                    }
+                }
+            }
+
+            .three-btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .btns {
+                    width: 121.19px;
+                    height: 56px;
+                    left: 42px;
+                    top: 421.61px;
+                    background: #FFFFFF;
+                    border: 0.417895px solid #F20000;
+                    box-shadow: 0px 1.67158px 6.68632px rgba(0, 0, 0, 0.14);
+                }            
+                
+                .btns:hover {
+                    opacity: 0.4;
+                    cursor: pointer;
+                }
+            }
+
+            .not-account {
+                text-align: center;
+                margin-top: 16px;
+                
+                .privacy {
+                    display: block;
+                    margin-bottom: 26px;
+                    
+                }
+                
+                .register {
+                    text-decoration: none;
+                    color: #D80000;
+                    font-weight: 500;
+                } 
+                
+                
+            }
+
+        }
+   }
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 600px) {
+    .Container-Register {
+        .Register {
+            background-image: none;
+            padding: 0;
+
+            .Form-Register {
+                width: 100%;
+                margin-left: 0;
+                box-shadow: none;
+
+                .title {
+                    //display: none;
+                    text-align: center;
+                }
+
+                .Input-email {
+                    input {
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .Button-login {
+                    .btn-sign_in {
+                        width: 100%;
+                    }
+
+                    .Or {
+                        p {
+                            margin-left: 16px;
+                            margin-right: 16px;
+                        }
+                    }
+                }
+
+                .three-btn {
+                    .btns {
+                        width: 100%;
+                    }
+                    .btn-apple {
+                        margin-left: 16px;
+                        margin-right: 16px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+/* Responsive Tablet */
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .Container-Register { 
+        .Register {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 426px;
+            padding: 0;
+            padding-top: 12px;
+            .Form-Register {
+                width: 40%;
+                height: 98%;
+                margin-left: 53%;
+                padding: 1rem;
+                background: #fff;
+                box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+                .title {
+                    font-size: 20px;
+                    margin-bottom: 0.5rem;
+                }
+
+                .Input-email,
+                .Input-pass {
+                    margin-bottom: 0.5rem;
+                    input {
+                        width: 100%;
+                        padding: 9px;
+                        box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+                    }
+                    .error {
+                        font-size: 12px;
+                    }
+                }
+
+                .Input-pass {
+                    position: relative;
+                    button {
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        padding: 0 0.9375rem 0 0.75rem;
+                        position: absolute;
+                        top: 15px;
+                        right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        img {
+                            width: 1.25rem;
+                            height: 0.625rem;
+                        }
+                    }
+                }
+
+                .Button-login {
+                    .btn-sign_in {
+                        width: 100%;
+                        height: 45px;
+                        background: #D80000;
+                        opacity: 0.5;
+                        color: #fff;
+                        margin-top: 3px;
+                        cursor: pointer;
+                    }
+
+                    .Or {
+                        margin-top: 5px;
+                        p {
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
+                    }
+    
+                }
+
+                .three-btn {
+                    margin-top: -14px;
+                    .btns {
+                        img {
+                            width: 20%;
+                            height: 50%;
+                        }
+                    }
+
+                    .btn-apple {
+                        margin-left: 16px;
+                        margin-right: 16px;
+                    }
+                }
+
+                .not-account {
+                    margin-top: 8px;
+                }
+
+            }
+
+        }
+
+    }
+}

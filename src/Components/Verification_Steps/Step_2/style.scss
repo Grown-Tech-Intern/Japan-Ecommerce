@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container-password {
+    .password {
+        .steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1420px;
+            margin-top: 50px;
+
+            .step_1,
+            .step_2 {
+
+                .no-1,
+                .no-2 {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 20px;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .no-1,
+                .no-2 {
+                    background: #6ACA25;
+                    margin-left: 50px;
+                }
+
+
+                .auth-phone,
+                .create-pass {
+                    color: #6ACA25;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+
+            }
+
+            .arr {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: -50px;
+
+                .arrow {
+                    position: absolute;
+                    top: 19.8px;
+                    left: 107px;
+                }
+
+                .arrow::before,
+                .arrow::after {
+                    position: relative;
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 1px;
+                    background: #6ACA25;
+                }
+
+                .arrow::before {
+                    transform: rotate(45deg);
+                }
+
+                .arrow::after {
+                    top: 14px;
+                    transform: rotate(-45deg);
+                }
+
+                .arrow-1 {
+                    border: 0.5px solid #6ACA25;
+                    margin-top: 26px;
+                    width: 120px;
+                    background: #6ACA25;
+                }
+            }
+
+           .arr {
+                .arr-2::before, .arr-2::after {
+                    background-color: #9A9A9A;
+                }
+                .arr-3 {
+                    border: 0.5px solid #9A9A9A;
+                    background-color: #9A9A9A;
+                }
+           }
+
+            .step_2 {
+                .no-2 {
+                    border: 1px solid #9A9A9A;
+                    margin-left: 25px;
+                }
+            }
+
+            .step_3 {
+                .check {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 20px;
+                    border: 1px solid #9A9A9A;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 20px;
+
+                    .no-3 {
+                        display: inline-block;
+                        width: 8px;
+                        height: 16px;
+                        border-bottom: 1px solid #9A9A9A;
+                        border-right: 1px solid #9A9A9A;
+                        transform: rotate(45deg);
+                    }
+
+                }
+
+                .complete {
+                    color: #9A9A9A;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .Set_up-pass {
+            height: 100%;
+            margin: 30px auto 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .set-up {
+                border: 1px solid #fff;
+                width: 471px;
+                height: 459px;
+                box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+
+                .please-import {
+                    padding-top: 33px;
+                    text-align: center;
+
+                    img:hover {
+                        cursor: pointer;
+                        opacity: 0.6;
+
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #000000;
+                        display: inline;
+                        margin-left: 10px;
+                    }
+                }
+
+                .final {
+                    width: 314px;
+                    height: 42px;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 16px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                .Input-pass,
+                .require,
+                .btn-sign_in {
+                    margin-left: 37px;
+                }
+
+                .Input-pass {
+                    position: relative;
+                    margin-top: 25px;
+
+                    input {
+                        width: 50%;
+                        padding: 12px;
+                        box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+                        width: 396px;
+                        height: 45px;
+                    }
+
+                    button {
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        padding: 0 0.9375rem 0 0.75rem;
+                        position: absolute;
+                        top: 18px;
+                        right: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 1.25rem;
+                            height: 0.625rem;
+                        }
+                    }
+                }
+
+                .require {
+                    margin-top: 16px;
+                    color: #9A9A9A;
+                }
+
+                .btn-sign_in {
+                    width: 406px;
+                    height: 45px;
+                    background: #D80000;
+                    opacity: 0.5;
+                    color: #fff;
+                    margin-top: 16px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+    }
+}
