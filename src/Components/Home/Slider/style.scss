@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_slider {
+    .slider {
+        padding-top: 55px;
+        padding-bottom: 110px;
+
+        .img-slider, .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-slider {
+            //width: 100%;
+            padding-bottom: 16px;
+            img {
+                width: 884px;
+                height: 442px;
+            }
+        }
+
+        .circle {
+            img {
+                padding-right: 16px;
+            }
+        }
+
+    }
+}

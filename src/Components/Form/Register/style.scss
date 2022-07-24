@@ -12,10 +12,14 @@
         background-position: center center;
         height: 660px;
         padding: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         .Form-Register {
             width: 471px;
-            height: 505px;
-            margin-left: 60%;
+            height: 550px;
+            margin-right: 87px;
             padding: 2rem;
             background: #fff;
             box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
@@ -196,20 +200,36 @@
     }
 }
 
+/*----------------------------*/
+@media screen and (max-width: 768px)  { 
+    .Container-Register {
+        .Register { 
+            background-image: none;
+            .Form-Register {
+                margin: auto;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+/*---------------------------*/
+
 /* Responsive Tablet */
-@media only screen and (min-width:768px) and (max-width: 1024px) {
+@media only screen and (min-width:769px) and (max-width: 1024px) {
     .Container-Register { 
         .Register {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
-            height: 426px;
+            height: 462px;
             padding: 0;
             padding-top: 12px;
             .Form-Register {
-                width: 40%;
-                height: 98%;
-                margin-left: 53%;
+                width: 312px;
+                height: 394px; 
+                // margin-left: 53%;
+                margin-right: 87px;
                 padding: 1rem;
                 background: #fff;
                 box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
@@ -298,3 +318,107 @@
 
     }
 }
+
+/*-------------------------*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    .Container-Register {
+        .Register {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 510px;
+            padding: 0;
+            padding-top: 12px;
+            .Form-Register {
+                width: 352px;
+                height: 398px;  
+                margin-right: 86px;
+                padding: 1rem;
+                background: #fff;
+                box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+                .title {
+                    font-size: 20px;
+                    margin-bottom: 0.5rem;
+                }
+
+                .Input-email,
+                .Input-pass {
+                    margin-bottom: 0.5rem;
+                    input {
+                        width: 100%;
+                        padding: 9px;
+                        box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+                    }
+                    .error {
+                        font-size: 12px;
+                    }
+                }
+
+                .Input-pass {
+                    position: relative;
+                    button {
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        padding: 0 0.9375rem 0 0.75rem;
+                        position: absolute;
+                        top: 15px;
+                        right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        img {
+                            width: 1.25rem;
+                            height: 0.625rem;
+                        }
+                    }
+                }
+
+                .Button-login {
+                    .btn-sign_in {
+                        width: 100%;
+                        height: 45px;
+                        background: #D80000;
+                        opacity: 0.5;
+                        color: #fff;
+                        margin-top: 3px;
+                        cursor: pointer;
+                    }
+
+                    .Or {
+                        margin-top: 5px;
+                        p {
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
+                    }
+    
+                }
+
+                .three-btn {
+                    margin-top: -14px;
+                    .btns {
+                        img {
+                            width: 20%;
+                            height: 50%;
+                        }
+                    }
+
+                    .btn-apple {
+                        margin-left: 16px;
+                        margin-right: 16px;
+                    }
+                }
+
+                .not-account {
+                    margin-top: 8px;
+                }
+
+                
+            }
+
+        }
+    }
+}
+/*------------------------*/

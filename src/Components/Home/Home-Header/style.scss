@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_home-header {
+    width: 100%;
+    .home-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 16px 0;
+        .logo-home {
+            width: 141px;
+            height: 41.36px;
+            margin-left: -97px;
+        }
+
+        .search_bar {
+            position: relative;
+            margin-left: -103px;
+            .input_search {
+                width: 420px;
+                height: 40px;
+                padding: 8px 16px;
+                border: 1px solid #B7B7B7;
+            }
+
+            .input_search::placeholder {
+                color: #000000;
+            }
+
+            .icon-search {
+                position: absolute;
+                display: inline;
+                top: 8px;
+                right: 10px;
+            }
+        }
+
+        .logo_name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-weight: 600;
+                padding: 0 7px;
+            }
+        }
+
+        .two_logo {
+            margin-left: -101px;
+            margin-right: -118px;
+            img {
+                margin-right: 24px;
+            }
+        }
+
+        .two_button {
+            width: 166px;
+            height: 42px;
+            background: #D80000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                font-size: 12px;
+                font-weight: 700;
+                text-decoration: none;
+                color: #fff;
+                
+            }
+        }
+
+    }
+
+}
