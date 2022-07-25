@@ -35,9 +35,9 @@ function App() {
       <Home_header />
         {/* <Menu /> */}
         <Nav />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Slider />} />
-        </Routes> */}
+        </Routes>
 
     </div>
   );

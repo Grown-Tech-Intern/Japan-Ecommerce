@@ -1,21 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '././style.scss'
+import SliderContent from './SliderContent'
+import imageSlider from './ImageSlider'
+import Arrows from './Arrows'
+import Dots from './Dots'
+
+const len = imageSlider.length - 1
 
 function Slider() {
-  return (
-    <div className='container_slider'>
-        <div className='slider'>
-            <div className='img-slider'>
-                <img src='/images/bnrr-01.svg' alt='' />
-            </div>
+  const [activeIndex, setActiveIndex] = useState(0);
 
-            <div className='circle'>
-                <img src='/images/circle.svg' alt='' />
-                <img src='/images/circle.svg' alt='' />
-                <img src='/images/circle.svg' alt='' />
-                <img src='/images/circle.svg' alt='' />
-            </div>
-        </div>
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+  //   }, 0);
+  //   return () => clearInterval(interval);
+  // }, [activeIndex]);
+
+  return (
+    <div className='slider-container'>
+      <SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
+      <Arrows
+        prevSlide={() => 
+          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+        }
+        nextSlide={() => 
+          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+        }  
+      />
+      <Dots 
+        activeIndex={activeIndex}
+        imageSlider={imageSlider}
+        onclick={(activeIndex) => setActiveIndex(activeIndex)}
+      />
+
     </div>
   )
 }
